@@ -8,7 +8,7 @@ export default React.forwardRef<HTMLDivElement, any>(({ onMount }, ref) => {
   }, [onMount]);
 
   return (
-    <div ref={ref} className="target">
+    <div ref={ref} className="target" style={{ height: 64, width: 64, margin: '0 auto' }}>
       <Floater content="I have a click event to my repo!" event="hover" placement="top">
         <Anchor
           display="inline-flex"
